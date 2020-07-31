@@ -6,6 +6,7 @@ const scores = require('./scores')
 const express = require('express')
 const app = express()
 
+app.use(express.static("public"))
 app.set('view engine', 'pug')
 // No Changes are needed below this line!!
 app.get('/', (request, response) => {
