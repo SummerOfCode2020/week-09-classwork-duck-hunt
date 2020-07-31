@@ -3,7 +3,14 @@
 //  Hints: What are the basics needed for an express app?
 //         What is missing to configure pug as the view engine
 const scores = require('./scores')
+const express = require('express')
+const app = express()
+const router = express.Router()
 
+app.use(router)
+app.use(express.static('public'))
+
+app.set('view engine', 'pug')
 
 // No Changes are needed below this line!!
 app.get('/', (request, response) => {
