@@ -7,7 +7,7 @@
     "dev": "./node_modules/.bin/nodemon index.js",
     "lint": "./node_modules/.bin/eslint --format codeframe .",
     "lint:fix": "./node_modules/.bin/eslint --fix --format codeframe .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/stackeducation/duck-hunt#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.4",
     "pug-lint": "^2.6.0"
   },
   "dependencies": {
