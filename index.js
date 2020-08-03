@@ -6,11 +6,15 @@ const scores = require('./scores')
 const express = require('express')
 const app = express()
 
-const router = express.Router()
+app.get('user', (req, res) => {
+  const user = {}
 
-app.use(router)
+  res.send(user)
+})
 
+app.use(express.static('public'))
 
+app.set('view engine', 'pug')
 
 // No Changes are needed below this line!!
 app.get('/', (request, response) => {
